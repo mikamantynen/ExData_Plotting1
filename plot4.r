@@ -26,7 +26,7 @@ lines(stuff$Sub_metering_2,col="red")
 lines(stuff$Sub_metering_3,col="blue")
 
 axis(1,at=c(1,as.integer(table(stuff$Day)["Thu"]),length(stuff$Day)),labels=c("Thu","Fri","Sat"))
-legend(length(stuff$Day)*0.35,max(stuff$Sub_metering_1),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","green","blue"))
+legend("topright",max(stuff$Sub_metering_1),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","green","blue"))
 
 #3
 plot(stuff$Voltage,type="l",ylab="Voltage",xaxt="n",xlab="",sub="datetime")
